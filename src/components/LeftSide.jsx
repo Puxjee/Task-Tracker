@@ -21,16 +21,22 @@ const LeftSide = ({ addTask }) => {
       className='flex flex-col justify-center items-center h-full'
       onSubmit={handleSubmit}
     >
-      <h1 className='text-2xl font-bold mb-8 text-[#161616]'>Add Your Task</h1>
+      <h1 className='text-3xl font-bold mb-8 text-[#161616]'>Add Your Task</h1>
 
       <div className='w-[80%] my-4'>
+        <label
+          htmlFor='task'
+          className='block mb-2 text-[#161616] font-medium'
+        >
+          Task
+        </label>
         <input
           id='task'
           type='text'
           placeholder='Add Task'
           value={taskText}
           onChange={(e) => setTaskText(e.target.value)}
-          className='w-full p-3 rounded-md bg-[#333333] text-white focus:outline-none'
+          className='w-full p-3 rounded-md bg-[#333333] text-white focus:outline-none '
         />
       </div>
       <div className='w-[80%] my-4'>
@@ -47,22 +53,22 @@ const LeftSide = ({ addTask }) => {
       <div className='flex flex-col md:flex-row gap-4 mt-8 w-[80%] justify-between'>
         <button
           type='reset'
-          className='bg-[#EE5353] py-4 px-10 rounded-lg flex items-center justify-between gap-2 hover:bg-[#FF6B6B] transition-colors'
+          className='bg-red-100 text-red-700 py-3 px-8 rounded-lg flex items-center gap-2 hover:bg-red-200 transition-colors font-semibold'
         >
           Reset{" "}
           <RotateCcw
-            size={20}
-            className='text-white'
+            size={18}
+            className='text-red-700'
           />
         </button>
         <button
           type='submit'
-          className='bg-[#3A49F6] py-4 px-10 rounded-lg flex items-center justify-between gap-2 hover:bg-[#4D5BFF] transition-colors'
+          className='bg-indigo-100 text-indigo-700 py-3 px-8 rounded-lg flex items-center gap-2 hover:bg-indigo-200 transition-colors font-semibold'
         >
           Submit{" "}
           <SendHorizonal
-            size={20}
-            className='text-white'
+            size={18}
+            className='text-indigo-700'
           />
         </button>
       </div>
