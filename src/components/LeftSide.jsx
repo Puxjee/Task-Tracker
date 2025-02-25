@@ -1,9 +1,20 @@
 import { RotateCcw, SendHorizonal } from "lucide-react"
-import React from "react"
+import React, { useState } from "react"
 
-const LeftSide = () => {
+const LeftSide = ({ addTask }) => {
+  const [taskText, setTaskText] = useState("")
+  const [taskDeadline, setTaskDeadline] = useState("")
+
   const handleSubmit = (e) => {
     e.preventDefault()
+    if (!taskText || !taskDeadline) {
+      alert("Please fill in all fields")
+      return
+    } else {
+      addTask(taskText, taskDeadline)
+      setTaskText("")
+      setTaskDeadline("")
+    }
   }
   return (
     <form
@@ -17,6 +28,8 @@ const LeftSide = () => {
           id='task'
           type='text'
           placeholder='Add Task'
+          value={taskText}
+          onChange={(e) => setTaskText(e.target.value)}
           className='w-full p-3 rounded-md bg-[#333333] text-white focus:outline-none'
         />
       </div>
@@ -24,6 +37,8 @@ const LeftSide = () => {
         <input
           id='deadline'
           type='date'
+          value={taskDeadline}
+          onChange={(e) => setTaskDeadline(e.target.value)}
           placeholder='Deadline'
           className='w-full p-3 rounded-md bg-[#333333] text-white focus:outline-none'
         />
