@@ -1,8 +1,49 @@
-# React + Vite
+# TaskMaster - Modern Task Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern task management web application with intuitive UI, mobile responsiveness, and real-time updates. Built with React and Tailwind CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Tasks with Deadlines**
+- **Mark Tasks Complete/Incomplete**
+- **Delete Tasks**
+- **Responsive Design** (Mobile-first approach)
+- **Local Storage Persistence**
+- **Interactive UI Elements**
+- **Accessibility Optimized**
+- **Smooth Animations**
+- **Task Counter**
+- **Date Formatting**
+- **Empty State Handling**
+
+## Key Enhancements
+
+- 📱 **Mobile-Optimized** layout with touch-friendly controls
+- ⚡ **Immutable State Management** for reliable updates
+- 📅 **Human-readable Date Formatting** (e.g., "Dec 25, 2023")
+- 🔒 **Local Storage Integration** for data persistence
+- ♿ **ARIA Labels** for screen reader support
+- 🚀 **Performance Optimizations** with React.memo
+- ✨ **Hover/Focus States** for better UX
+- 📱 **Viewport Optimization** for mobile devices
+
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/Puxjee/Task-Tracker
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Start the development server:
+
+```bash
+
+npm run dev
+```
