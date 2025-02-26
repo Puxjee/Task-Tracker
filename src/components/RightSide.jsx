@@ -19,9 +19,10 @@ const RightSide = ({ tasks, setTasks }) => {
 
   return (
     <div className='h-full flex flex-col'>
-      <h2 className='text-xl font-bold mb-4 text-[#161616] sticky top-0 bg-white pb-4'>
+      <h2 className='text-lg md:text-xl font-bold mb-2 md:mb-4 text-[#161616] sticky top-0 bg-white pt-2 pb-2 md:pb-4'>
         Your Tasks ({tasks.length})
       </h2>
+      {/*w9eft lena*/}
       <ul className='h-full min-h-[200px] pr-4 overflow-y-auto list-disc pl-5 text-gray-700 text-l font-semibold'>
         {tasks.map((task) => (
           <li
