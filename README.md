@@ -1,7 +1,5 @@
 # TaskMaster - Modern Task Management App
 
-![Task Management Demo](https://via.placeholder.com/800x400.png?text=TaskMaster+Demo+GIF)
-
 A modern task management web application with intuitive UI, mobile responsiveness, and real-time updates. Built with React and Tailwind CSS.
 
 ## Features
