@@ -32,7 +32,7 @@ A modern task management web application with intuitive UI, mobile responsivenes
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/Puxjee/Task-Tracker
+git clone [https://github.com/Puxjee/Task-Tracker](https://github.com/Puxjee/TaskMaster)
 ```
 
 2. Install dependencies:
